@@ -6,6 +6,8 @@ form.addEventListener('submit', onSubmitForm);
 
 const formData = {};
 
+dataFromLocalStorage();
+
 function onFormData(e) {
   formData[e.target.name] = e.target.value;
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
@@ -25,5 +27,4 @@ function dataFromLocalStorage() {
     email.value = data.email;
     message.value = data.message;
   }
-};
-dataFromLocalStorage()
+}
