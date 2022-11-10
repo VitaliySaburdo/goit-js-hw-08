@@ -21,8 +21,9 @@ function onSubmitForm(e) {
   e.preventDefault();
   e.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
+
   console.log(formData);
-  formData = {}
+  formData = {};
 }
 
 function dataFromLocalStorage() {
